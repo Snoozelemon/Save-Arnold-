@@ -1,0 +1,113 @@
+body{
+	background: rgb(55,51,113);
+	background: linear-gradient(90deg, rgba(55,51,113,1) 0%, rgba(150,150,203,1) 36%, rgba(0,212,255,1) 100%);
+	font-family: "Segoe UI",Arial,sans-serif;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 70vh;
+	margin: 0px;
+	font-weight: bold;
+}
+
+.game-body{
+	padding: 20px 30px;
+	position: relative;
+	margin: auto;
+	height: 400px;
+	width: 700px;
+	border: ;
+}
+
+.pillar{
+	position: relative;
+	left: 100px ;
+	align-items: center;
+	stroke: blanchedalmond;
+	stroke-width: 3px;
+	stroke-linecap: round;
+}
+
+.figure{
+	position: relative;
+	left: 90px;
+}
+
+.incorrect-container{
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	display: flex;
+	flex-direction: column;
+	text-align: right;
+}
+.incorrect-container p{
+	margin: 0 0 5px;
+}
+
+.incorrect-container span{
+	margin: 15px;
+}
+
+.display-words{
+	display: flex;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.letter{
+	margin: 0 5px;
+	height: 50px;
+	width: 20px;
+	display: inline-flex;
+	border-bottom: 3px solid yellow ;
+	align-items: center;
+	font-size: 30px;
+}
+
+.notify-msg{
+	background-color: rgba(0, 0, 0, 0.3);
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	right:  0;
+	left: 0;
+	display: none;
+	align-items: center;
+	justify-content: center;
+}
+
+.notify{
+	background: lightskyblue;
+	border-radius: 5px;
+	box-shadow: 0 15px 10px 3px rgba(0, 0, 0, 0.1);
+	padding: 20px;
+	text-align: center;
+}
+
+.notify button{
+	cursor: pointer;
+	background-color: #fff;
+	border: 0;
+	border-radius: 5px;
+	padding: 10px;
+	font-weight: bold;
+}
+
+.notify button:active{
+	transform: scale(0.98);
+}
+
+.notify button:focus{
+	outline: 0;
+}
+
+#image{
+    pointer-events: none;
+    cursor: default;
+    -webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}

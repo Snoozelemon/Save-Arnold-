@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Game</title>
+
+	<link rel="stylesheet" type="text/css" href="styling.css">
+</head>
+<body>
+	<h1>Save Arnold</h1>
+	<h2>Hurry up and guess the correct word to save Arnold!</h2>
+	<div class="game-body">
+		<div class="figure">
+			<img src="assests/pillar.png" id= 'image'width="300" height="300">
+		</div>
+
+		<div class="incorrect-container">
+			<div id="incorrect-letters">
+				<p></p>
+				<span></span>
+			</div>
+		</div>
+
+		<div class="display-words" id="word">
+			<!--<div class="letter">s</div>
+			<div class="letter">s</div>
+			<div class="letter">s</div>-->
+			<div class="letter">s</div>
+		</div>
+
+		<!-- Notification messages -->
+		<div class="notify-msg" id="notify-msg">
+			<div class="notify">
+				<h2 id="win-msg">You saved Arnold :D</h2>
+				<button id="play-again">Play Again</button>
+			</div>
+		</div>
+
+	</div>
+	<script type="text/javascript" src="game.js"></script>
+</body>
+</html>
